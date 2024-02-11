@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-box{
+    width: 250px;
+    margin: 50px 0 0 50px;
+    border: 2px solid #333;
+    background: gray;
+    color: #fff;
+    float: left;
+}
+h1{
+    padding: 0 0 0 8px;
+}
+p{
+    text-align: justify;
+    padding: 8px;
+}
+/*box2*/
+.box .box2{
+    background: linear-gradient(red,green,yellow);
+}
+/*box3*/
+.box .box3{
+    background: linear-gradient(to right,red,gray,yellow);
+}
+.box .box3:hover{
+   box-shadow: 8px 8px 5px gray;
+    color: #333;
+    background: linear-gradient(to right,#fff,gray,yellow);
+}
+/*box4*/
+.box .box4{
+    background: radial-gradient(gray,blue);
+    transition: all .5s ease;
+}
+.box .box4:hover{
+    background: linear-gradient(to left,green,red);
+    box-shadow: 5px 5px 3px gray;
+}
+/*box5*/
+.box .box5{
+    background: radial-gradient(blue,red);
+    transition: all .5s ease;
+}
+.box .box5:hover{
+    box-shadow: 5px 5px 3px gray;
+    background: conic-gradient(red,green);
+    
+}
+/*box6*/
+.box .box6{
+    background: conic-gradient(orange,green,red);
+    transition: all .5s ease;
+}
+.box .box6:hover{
+    box-shadow: 5px 5px 3px gray;
+    background: linear-gradient(blue,black);
+    color: red;
+}
+/*box7*/
+.box .box7{
+    background: conic-gradient(orange,green,blue);
+    transition: all .5s ease;
+}
+.box .box7:hover{
+    box-shadow: 5px 5px 3px gray;
+    background: #fff;
+    color: red;
+}
+/*box8*/
+.box .box8{
+    background: #fff;
+    color: #333;
+    transition: all .5s ease;
+}
+.box .box8:hover{
+    box-shadow: 5px 5px 3px gray;
+    background: conic-gradient(orange,green,red);
+    color: #fff;
+}
+/*box9*/
+.box .box9{
+    background: #333;
+    color: #fff;
+    position: relative;
+    transition: all .5s ease;
+    overflow: hidden;
+    z-index: 5;
+}
+.box .box9:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+.box .box9:before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: -5;
+    transition: all .5s ease;
+}
+.box .in-box:hover .box9:before{
+    left: 0%;
+}
+/*box10*/
+.box .box10{
+    background: blue;
+    color: #fff;
+    position: relative;
+    transition: all .5s ease;
+    overflow: hidden;
+    z-index: 5;
+}
+.box .box10:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+.box .box10:after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #333;
+    position: absolute;
+    top: 0;
+    right: -50%;
+    z-index: -5;
+    transition: all .5s ease;
+}
+.box .in-box:hover .box10:after{
+    right: 0%;
+}
+/*box11*/
+.box .box11{
+    background: yellow;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.box .box11:hover{
+    color: #fff;
+    box-shadow: 5px 5px 5px gray;
+}
+.box .box11:before{
+   content: "";
+   width: 50%;
+   height: 100%;
+    background: linear-gradient(to left,blue,green);
+    position: absolute;
+    top: 0;
+    left: -50%;
+    transition: all .5s ease;
+    z-index: -5;
+}
+.box .box11:hover .box11:before{
+    left: 0;
+}
+.box .box11:after{
+   content: "";
+   width: 50%;
+   height: 100%;
+    background: linear-gradient(to left,blue,green);
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transition: all .5s ease;
+    z-index: -5;
+}
+.box .in-box:hover .box11:after{
+    right: 0;
+}
+/*box12*/
+.box .box12{
+    background: linear-gradient(red,green,blue);
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+     
+}
+
+.box .box12:before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    background: #333;
+    position: absolute;
+    top: -50%;
+    left: -70%;
+    border-radius: 0 0 190px 0;
+    transition: all .5s ease;
+    z-index: -5;
+}
+.box .box12:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+
+.box .in-box:hover .box12:before{
+    top: -1%;
+    left: -2%;
+    border-radius: 500px 0 0 0;
+}
+/*box13*/
+.box .box13{
+    background: #fff;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+     
+}
+
+.box .box13:before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    background: red;
+    position: absolute;
+    top: -90%;
+    left: -10%;
+    border-radius: 0 0 70px 70px;
+    transition: all .5s ease;
+    z-index: -5;
+}
+.box .box13:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+
+.box .in-box:hover .box13:before{
+    top: -1%;
+    left: -2%;
+    border-radius: 500px 0 0 0;
+}
+/*box14*/
+.box .in-box h2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 10;
+    color: #fff;
+    transition: all .3s ease;
+}
+.box .in-box:hover h2{
+    display: none;
+}
+.box .box14{
+    background: #333;
+    position: relative;
+    overflow: hidden;
+}
+.box .box14:before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,red,green,yellow);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    z-index: 5;
+}
+.box .in-box:hover .box14:before{
+    left: -53%;
+}
+.box .box14:after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,red,green,yellow);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 1s ease;
+    z-index: 5;
+}
+.box .in-box:hover .box14:after{
+    right: -53%;
+}
+
+
